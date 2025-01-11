@@ -1,6 +1,6 @@
 <h1 style="text-align: center;">"Order your way to victory!"</h1>
 
-## Game Description
+## TEST Game Description
 "Order & Score" is a strategic and competitive game where players arrange numbers in the optimal order to achieve the highest score. Players must carefully plan their sequence to maximize their score using multiplication and differences between consecutive numbers. The game challenges both strategic thinking and tactical decision-making, making it fun and engaging for all.
 
 ---
