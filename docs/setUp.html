@@ -1,0 +1,34 @@
+<html>
+	<body>
+		<h1>Set up OrderScore</h1>
+		<h3>Install Java 17 or later</h3>
+		<ul>
+		  <li><a href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html">Download Java</a></li>
+		  <li>Open a termail and run java -version to make sure java is installed properly</li>
+		</ul>
+		<h3>Install Gradle</h3>
+		<ul>
+		  <li><a href="https://gradle.org/install/">Download Gradle</a></li>
+		  <li>Open a termail and run gradle -version to make sure gradle is installed properly</li>
+		</ul>
+		<h3>Clone the project from GitHub</h3>
+		<ul>
+		  <li>Open a termial, cd to the folder you want to store the project
+		  <li>run this in the termial <br> clone https://github.com/christylaminated/orderScore.git</li>
+		</ul>
+		<h3>Import the project to IntelliJ</h3>
+		<ul>
+		  <li>Run IntelliJ, File -> New -> Import from Existing sources...</li>
+		  <li>Choose Import project from external model and pick Gradle in the list. Then click Create<br> <img src="import.png" style="width: 30%; height: auto;"></li>
+		  <li>It should look like this <br>  <img src="workspace.png" style="width: 30%; height: auto;"></li>
+		  <li>Click on Gradle on the right, then right click "OrderToScore" , choose Reload Gradle Project to download the dependence for the project</li>
+		  <li>public static void main is in com.webhuman.orderscore.main.OrderToScore.java</li>
+		</ul>
+		<h3>Build the project</h3>
+		<ul>
+		  <li>Click on Termial on the left to open a Termial within IntelliJ.</li>
+		  <li>Run "gradle build" to build the project. It should genrate the jar in build/libs/OrderToScore-1.0-SNAPSHOT.jar <br> <img src="build.png" style="width: 30%; height: auto;"></li>
+		  <li>Run "gradle jpackage" to genrate the .app in build/jpackage/OrderToScoreGame.app <br> <img src="run.png" style="width: 30%; height: auto;"><br><br> OrderToScoreGame.app is a macOS executable file that can be distributed to users. Simply double-clicking the file will launch the application. </li>	<br>  
+		</ul>
+    </body>
+</html>
