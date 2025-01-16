@@ -3,8 +3,6 @@
 ## Game Description
 "Order & Score" is a strategic and competitive game where players arrange numbers in the optimal order to achieve the highest score. Players must carefully plan their sequence to maximize their score using multiplication and differences between consecutive numbers. The game challenges both strategic thinking and tactical decision-making, making it fun and engaging for all.
 
----
-
 ## Game Setup
 1. **The Numbers**:
    - Players are given the numbers `1, 2, 3, 4, 5….N`.
@@ -15,8 +13,6 @@
 
 3. **Goal**:
    - Players must create a sequence of the numbers that will result in the highest total score based on the scoring formula.
-
----
 
 ## Rules
 1. **Game Objective**:
@@ -39,8 +35,6 @@
 5. **Winning the Game**:
     - Once all players have chosen their sequences, the scores are calculated using the scoring formula.
     - The player with the highest total score wins the game.
-
----
 
 ## Example of Turn-Based Picking
 Let’s say **Player A** and **Player B** are playing. The numbers available are `1, 2, 3, 4, 5`.
@@ -75,8 +69,6 @@ Let’s say **Player A** and **Player B** are playing. The numbers available are
 
 Both players can now calculate their scores using the scoring formula.
 
----
-
 ## Example Scoring
 1. **Player A chooses the sequence: `54123`**
 - **Score Calculation**:
@@ -97,8 +89,6 @@ Both players can now calculate their scores using the scoring formula.
 - Player B’s total score is **34**.
 - **Player A wins!**
 
----
-
 ## Strategies
 1. **Plan the Sequence**:
 - Try to position larger numbers where their values will be maximized by multiplication.
@@ -107,22 +97,19 @@ Both players can now calculate their scores using the scoring formula.
 2. **Adapt to Opponent Choices**:
 - If playing competitively, select sequences that you believe will outperform your opponents' choices.
 
----
 
 ## Winning the Game
 - The player with the highest total score at the end is crowned the **Order and Score Champion**.
 
----
 
 ## Implementation Overview
 "Order & Score" is developed as a Java desktop application using the Swing library for the graphical user interface (GUI). The application allows players to interactively select and arrange numbers, calculate their scores, and view the results in a user-friendly interface.
 
-By adopting the **MVC design pattern**, the application achieves a clear separation of concerns, ensuring modularity and ease of maintenance:
-- **Model**: Manages the game's data, including the sequence of numbers, score calculation logic, and enforcement of game rules.
-- **View**: Defines the graphical interface with buttons, labels, and panels, enabling players to visually interact with the game.
-- **Controller**: Processes player actions, such as button clicks, updates the Model with player input, and refreshes the View to reflect the current game state.
+The application uses **Java Swing** to implement the **MVC design pattern**, establishing a clear separation of concerns, promoting modularity, and simplifying maintenance. Additionally, the project leverages **Threads**, **Runnable**, and **Sockets** for **multi-threaded processing** and **network communication**. While these technologies may be considered "dated" compared to modern alternatives like **JavaFX** and concurrent utilities such as **Executors**, they are intentionally chosen to provide a hands-on, foundational learning experience.
 
----
+##Project Objectives
+The project focuses on building a strong foundation in programming concepts by working with lower-level abstractions and encourages problem-solving and debugging in areas such as event-driven architecture, threading, and network communication.
+
 
 ## Development Phases
 1. **Phase 1**:
