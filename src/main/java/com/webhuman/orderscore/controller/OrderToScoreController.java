@@ -21,7 +21,9 @@ public class OrderToScoreController implements Controller<Integer> {
     @Override
     public void handleEvent(String id, Integer data) {
         if(id.equals(OrderScoreUI.EVENT_START_GAME_BUTTON_CLICK)){
-            view.update(OrderScoreUI.SHOW_ALL_NUMBER, null);
+            view.update(OrderScoreUI.UPDATE_LABEL, "Game is started");
+            view.update(OrderScoreUI.DISABLE_BUTTON, null);
+            //view.update(OrderScoreUI.SHOW_ALL_NUMBER, null);
         }
     }
 }
