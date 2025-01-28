@@ -34,6 +34,11 @@ public class OrderToScoreView extends UIView<String,Integer> {
 
     @Override
     public void update(String id, String data) {
+        if (id.equals(OrderScoreUI.UPDATE_LABEL)) {
+            scoreLabel.setText(data);
+        } else if (id.equals(OrderScoreUI.DISABLE_BUTTON)){
+            startGameButton.setEnabled(false);
+        }
     }
 
     @Override
