@@ -9,7 +9,7 @@ import javax.swing.*;
 
 public class OrderToScore {
     public static void main(String[] args) {
-        Controller controller = new OrderToScoreController(new OrderToScoreView());
+        Controller controller = new OrderToScoreController(new OrderToScoreView(5));
         SwingUtilities.invokeLater(() -> {
             JFrame frame = new JFrame("Order and Score Game");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
